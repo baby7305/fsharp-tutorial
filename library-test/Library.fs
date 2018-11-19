@@ -1,5 +1,8 @@
-namespace library_test
+// namespace library_test
 
-module Say =
-    let hello name =
-        printfn "Hello %s" name
+module Library
+
+open Newtonsoft.Json
+
+let getJsonNetJson value =
+    sprintf "I used to be %s but now I'm %s thanks to JSON.NET!" value (JsonConvert.SerializeObject(value))
