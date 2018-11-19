@@ -1,5 +1,3 @@
-// namespace library_test
-
 module Library
 
 open Newtonsoft.Json
